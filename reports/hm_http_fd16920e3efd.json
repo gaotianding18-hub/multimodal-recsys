@@ -1,0 +1,94 @@
+{
+  "health": {
+    "status": "ok",
+    "version": "fd16920e3efd",
+    "candidate_items": 41585,
+    "methods": [
+      "repeat",
+      "id",
+      "semantic",
+      "visual"
+    ]
+  },
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "hardware": "MacBook Air M5 24GB, shared host",
+  "workload": "localhost HTTP; 30 general histories, 10 visual-subset histories for visual method; k12; 5warmups per method; CPU torch threads1",
+  "results": [
+    {
+      "method": "repeat",
+      "concurrency": 1,
+      "requests": 100,
+      "errors": 0,
+      "p50_ms": 0.9896254923660308,
+      "p95_ms": 1.0697326622903347,
+      "requests_per_second": 989.2244670735007
+    },
+    {
+      "method": "repeat",
+      "concurrency": 4,
+      "requests": 100,
+      "errors": 0,
+      "p50_ms": 3.5912290040869266,
+      "p95_ms": 5.48746669664979,
+      "requests_per_second": 1076.6092651167119
+    },
+    {
+      "method": "id",
+      "concurrency": 1,
+      "requests": 100,
+      "errors": 0,
+      "p50_ms": 1.1334379960317165,
+      "p95_ms": 1.27846808754839,
+      "requests_per_second": 863.8301365644489
+    },
+    {
+      "method": "id",
+      "concurrency": 4,
+      "requests": 100,
+      "errors": 0,
+      "p50_ms": 3.3081875008065253,
+      "p95_ms": 4.089404761907645,
+      "requests_per_second": 1177.5505817293933
+    },
+    {
+      "method": "semantic",
+      "concurrency": 1,
+      "requests": 100,
+      "errors": 0,
+      "p50_ms": 1.9825829949695617,
+      "p95_ms": 2.319997627637349,
+      "requests_per_second": 494.6661583041554
+    },
+    {
+      "method": "semantic",
+      "concurrency": 4,
+      "requests": 100,
+      "errors": 0,
+      "p50_ms": 5.8538120065350085,
+      "p95_ms": 8.501049372716807,
+      "requests_per_second": 645.3665250614292
+    },
+    {
+      "method": "visual",
+      "concurrency": 1,
+      "requests": 100,
+      "errors": 0,
+      "p50_ms": 0.45093748485669494,
+      "p95_ms": 0.49366605817340314,
+      "requests_per_second": 2160.2665935137993
+    },
+    {
+      "method": "visual",
+      "concurrency": 4,
+      "requests": 100,
+      "errors": 0,
+      "p50_ms": 2.679833472939208,
+      "p95_ms": 3.311565186595544,
+      "requests_per_second": 1491.680154319047
+    }
+  ],
+  "limitations": [
+    "Short warm synthetic request workload, not real traffic or SLA",
+    "Server RSS/peak memory not measured by this client benchmark"
+  ]
+}

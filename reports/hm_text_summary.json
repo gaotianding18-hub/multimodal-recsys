@@ -1,0 +1,277 @@
+{
+  "runs": [
+    {
+      "args": {
+        "features": "artifacts/hm/clip/features.npz",
+        "mode": "text",
+        "seed": 42,
+        "epochs": 3,
+        "batch_size": 256,
+        "device": "cpu",
+        "max_train_queries": 0,
+        "allow_partial_images": false
+      },
+      "train_queries": 212658,
+      "candidate_items": 41585,
+      "image_coverage": 0.014187808148562908,
+      "logs": [
+        {
+          "epoch": 1,
+          "loss": 6.797566060985469,
+          "val": {
+            "recall@12": 0.005584263728326626,
+            "ndcg@12": 0.0033865472693669113,
+            "map@12": 0.0018304985425677822
+          }
+        },
+        {
+          "epoch": 2,
+          "loss": 6.666842334967658,
+          "val": {
+            "recall@12": 0.011134270211638072,
+            "ndcg@12": 0.006960890487989517,
+            "map@12": 0.003941820650365085
+          }
+        },
+        {
+          "epoch": 3,
+          "loss": 6.588966931963943,
+          "val": {
+            "recall@12": 0.01607905226734917,
+            "ndcg@12": 0.009983426591906175,
+            "map@12": 0.005775797625689564
+          }
+        }
+      ],
+      "selection_val_ndcg": 0.009983426591906175,
+      "test": {
+        "recall@12": 0.011496616834275329,
+        "ndcg@12": 0.007028809116662257,
+        "map@12": 0.003862440021609746
+      },
+      "seconds": 46.332392667012755,
+      "frozen_clip": true,
+      "feature_sha256": "08e0dec93276d7ee9451a073cb6d4fceea7b69477f51de27c2e12f79b2fd5844",
+      "model_sha256": "64806679f64f4ffbf3e94ba873f0bbec0842ebd6cc8958369d4e8270830d7461",
+      "limitations": [
+        "Exploratory test, not a blind holdout",
+        "Uniform sampled contrastive training candidates; full-catalogue evaluation",
+        "Training-known positives excluded from negatives; unobserved items are not dislike labels",
+        "Image-only arm uses text fallback where images are absent"
+      ],
+      "protocol": {
+        "train_start": "2020-06-17",
+        "validation_start": "2020-09-09",
+        "test_start": "2020-09-16",
+        "end_exclusive": "2020-09-23",
+        "max_users": 100000,
+        "min_train_purchases": 5,
+        "history_length": 30,
+        "selection_seed": 42,
+        "evaluation_k": 12
+      }
+    },
+    {
+      "args": {
+        "features": "artifacts/hm/clip/features.npz",
+        "mode": "text",
+        "seed": 43,
+        "epochs": 3,
+        "batch_size": 256,
+        "device": "cpu",
+        "max_train_queries": 0,
+        "allow_partial_images": false
+      },
+      "train_queries": 212658,
+      "candidate_items": 41585,
+      "image_coverage": 0.014187808148562908,
+      "logs": [
+        {
+          "epoch": 1,
+          "loss": 6.805714073594296,
+          "val": {
+            "recall@12": 0.004779557141950941,
+            "ndcg@12": 0.002361152989189199,
+            "map@12": 0.0010680160652146858
+          }
+        },
+        {
+          "epoch": 2,
+          "loss": 6.6769652957663785,
+          "val": {
+            "recall@12": 0.00982789784012558,
+            "ndcg@12": 0.00643578038134914,
+            "map@12": 0.0037843910013285738
+          }
+        },
+        {
+          "epoch": 3,
+          "loss": 6.587432335143198,
+          "val": {
+            "recall@12": 0.01369953126627353,
+            "ndcg@12": 0.009044308584127943,
+            "map@12": 0.005376024991235565
+          }
+        }
+      ],
+      "selection_val_ndcg": 0.009044308584127943,
+      "test": {
+        "recall@12": 0.012210637053044104,
+        "ndcg@12": 0.007264251782980147,
+        "map@12": 0.00393418053434493
+      },
+      "seconds": 44.16196462500375,
+      "frozen_clip": true,
+      "feature_sha256": "08e0dec93276d7ee9451a073cb6d4fceea7b69477f51de27c2e12f79b2fd5844",
+      "model_sha256": "d4aec26d2380070a16e5ccdef31f49e1c3cd978c41bd8d34577b94fe28a8c20f",
+      "limitations": [
+        "Exploratory test, not a blind holdout",
+        "Uniform sampled contrastive training candidates; full-catalogue evaluation",
+        "Training-known positives excluded from negatives; unobserved items are not dislike labels",
+        "Image-only arm uses text fallback where images are absent"
+      ],
+      "protocol": {
+        "train_start": "2020-06-17",
+        "validation_start": "2020-09-09",
+        "test_start": "2020-09-16",
+        "end_exclusive": "2020-09-23",
+        "max_users": 100000,
+        "min_train_purchases": 5,
+        "history_length": 30,
+        "selection_seed": 42,
+        "evaluation_k": 12
+      }
+    },
+    {
+      "args": {
+        "features": "artifacts/hm/clip/features.npz",
+        "mode": "text",
+        "seed": 44,
+        "epochs": 3,
+        "batch_size": 256,
+        "device": "cpu",
+        "max_train_queries": 0,
+        "allow_partial_images": false
+      },
+      "train_queries": 212658,
+      "candidate_items": 41585,
+      "image_coverage": 0.014187808148562908,
+      "logs": [
+        {
+          "epoch": 1,
+          "loss": 6.808328318681958,
+          "val": {
+            "recall@12": 0.005460325079601329,
+            "ndcg@12": 0.003345682698910577,
+            "map@12": 0.0018099623945770798
+          }
+        },
+        {
+          "epoch": 2,
+          "loss": 6.663187260518723,
+          "val": {
+            "recall@12": 0.0123433305361988,
+            "ndcg@12": 0.007854402387527744,
+            "map@12": 0.004394549908624977
+          }
+        },
+        {
+          "epoch": 3,
+          "loss": 6.581602366822722,
+          "val": {
+            "recall@12": 0.013476405283914826,
+            "ndcg@12": 0.008854083545165363,
+            "map@12": 0.005252209792420801
+          }
+        }
+      ],
+      "selection_val_ndcg": 0.008854083545165363,
+      "test": {
+        "recall@12": 0.010528250214296507,
+        "ndcg@12": 0.006522207645625801,
+        "map@12": 0.003547917819761668
+      },
+      "seconds": 44.25060733297141,
+      "frozen_clip": true,
+      "feature_sha256": "08e0dec93276d7ee9451a073cb6d4fceea7b69477f51de27c2e12f79b2fd5844",
+      "model_sha256": "0d9a463511cbd6bafd0f7d6290f13fef171092326bb15b08efe38092d1507d1c",
+      "limitations": [
+        "Exploratory test, not a blind holdout",
+        "Uniform sampled contrastive training candidates; full-catalogue evaluation",
+        "Training-known positives excluded from negatives; unobserved items are not dislike labels",
+        "Image-only arm uses text fallback where images are absent"
+      ],
+      "protocol": {
+        "train_start": "2020-06-17",
+        "validation_start": "2020-09-09",
+        "test_start": "2020-09-16",
+        "end_exclusive": "2020-09-23",
+        "max_users": 100000,
+        "min_train_purchases": 5,
+        "history_length": 30,
+        "selection_seed": 42,
+        "evaluation_k": 12
+      }
+    }
+  ],
+  "test_ndcg_mean": 0.0069384228484227345,
+  "seed_population_std": 0.0003096068836015431,
+  "selected_by_validation": {
+    "seed": 42,
+    "test": {
+      "recall@12": 0.011496616834275329,
+      "ndcg@12": 0.007028809116662257,
+      "map@12": 0.003862440021609746
+    }
+  },
+  "matched_baselines": {
+    "training_information": "Counts only targets in the same 212658 selected-user training queries; no extra user population",
+    "evaluation": "Full catalogue; week-start histories; OOC targets counted as misses",
+    "results": {
+      "val": {
+        "query_popularity": {
+          "recall@12": 0.010440231977597204,
+          "ndcg@12": 0.007155162025622875,
+          "map@12": 0.0034794966532657188
+        },
+        "query_recent_popularity": {
+          "recall@12": 0.020253814056681238,
+          "ndcg@12": 0.012364828026944021,
+          "map@12": 0.0063480114589583945
+        },
+        "repeat_then_query_recent": {
+          "recall@12": 0.05981783883216415,
+          "ndcg@12": 0.04499051877726715,
+          "map@12": 0.031713227343154925
+        }
+      },
+      "test": {
+        "query_popularity": {
+          "recall@12": 0.012253282047388793,
+          "ndcg@12": 0.008209678055486912,
+          "map@12": 0.004139110095461918
+        },
+        "query_recent_popularity": {
+          "recall@12": 0.017194905374244344,
+          "ndcg@12": 0.010454729088687548,
+          "map@12": 0.005307133026393927
+        },
+        "repeat_then_query_recent": {
+          "recall@12": 0.050991728741045225,
+          "ndcg@12": 0.03839088825747634,
+          "map@12": 0.02694953981776373
+        }
+      }
+    },
+    "limitations": [
+      "Query counts are distinct-day basket occurrences, not unit sales counts.",
+      "Initial history-only baskets are not added to popularity counts.",
+      "Same-day history tie ordering remains deterministic item-ID order."
+    ]
+  },
+  "limitations": [
+    "Seed spread is not statistical confidence",
+    "Exploratory test, not blind",
+    "Not a full multimodal experiment"
+  ]
+}

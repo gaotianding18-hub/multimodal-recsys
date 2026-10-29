@@ -1,0 +1,281 @@
+{
+  "_id": "678e5cb387ba422cae1fe649",
+  "id": "HuggingFaceTB/SmolVLM-500M-Instruct",
+  "private": false,
+  "pipeline_tag": "image-text-to-text",
+  "library_name": "transformers",
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "idefics3",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceM4/the_cauldron",
+    "dataset:HuggingFaceM4/Docmatix",
+    "arxiv:2504.05299",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "downloads": 128709,
+  "likes": 199,
+  "modelId": "HuggingFaceTB/SmolVLM-500M-Instruct",
+  "author": "HuggingFaceTB",
+  "sha": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+  "lastModified": "2025-04-08T07:26:28.000Z",
+  "gated": false,
+  "disabled": false,
+  "widgetData": [
+    {
+      "text": "Hi, what can you help me with?"
+    },
+    {
+      "text": "What is 84 * 3 / 2?"
+    },
+    {
+      "text": "Tell me an interesting fact about the universe!"
+    },
+    {
+      "text": "Explain quantum computing in simple terms."
+    }
+  ],
+  "model-index": null,
+  "config": {
+    "architectures": [
+      "Idefics3ForConditionalGeneration"
+    ],
+    "model_type": "idefics3",
+    "processor_config": {
+      "chat_template": "<|im_start|>{% for message in messages %}{{message['role'] | capitalize}}{% if message['content'][0]['type'] == 'image' %}{{':'}}{% else %}{{': '}}{% endif %}{% for line in message['content'] %}{% if line['type'] == 'text' %}{{line['text']}}{% elif line['type'] == 'image' %}{{ '<image>' }}{% endif %}{% endfor %}<end_of_utterance>\n{% endfor %}{% if add_generation_prompt %}{{ 'Assistant:' }}{% endif %}"
+    },
+    "tokenizer_config": {
+      "bos_token": "<|im_start|>",
+      "chat_template": "<|im_start|>{% for message in messages %}{{message['role'] | capitalize}}{% if message['content'][0]['type'] == 'image' %}{{':'}}{% else %}{{': '}}{% endif %}{% for line in message['content'] %}{% if line['type'] == 'text' %}{{line['text']}}{% elif line['type'] == 'image' %}{{ '<image>' }}{% endif %}{% endfor %}<end_of_utterance>\n{% endfor %}{% if add_generation_prompt %}{{ 'Assistant:' }}{% endif %}",
+      "eos_token": "<end_of_utterance>",
+      "pad_token": "<|im_end|>",
+      "unk_token": "<|endoftext|>"
+    }
+  },
+  "cardData": {
+    "library_name": "transformers",
+    "license": "apache-2.0",
+    "datasets": [
+      "HuggingFaceM4/the_cauldron",
+      "HuggingFaceM4/Docmatix"
+    ],
+    "pipeline_tag": "image-text-to-text",
+    "language": [
+      "en"
+    ],
+    "base_model": [
+      "HuggingFaceTB/SmolLM2-360M-Instruct",
+      "google/siglip-base-patch16-512"
+    ]
+  },
+  "transformersInfo": {
+    "auto_model": "AutoModelForMultimodalLM",
+    "pipeline_tag": "image-text-to-text",
+    "processor": "AutoProcessor"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "added_tokens.json"
+    },
+    {
+      "rfilename": "chat_template.json"
+    },
+    {
+      "rfilename": "config.json"
+    },
+    {
+      "rfilename": "generation_config.json"
+    },
+    {
+      "rfilename": "merges.txt"
+    },
+    {
+      "rfilename": "model.safetensors"
+    },
+    {
+      "rfilename": "onnx/decoder_model_merged.onnx"
+    },
+    {
+      "rfilename": "onnx/decoder_model_merged_bnb4.onnx"
+    },
+    {
+      "rfilename": "onnx/decoder_model_merged_fp16.onnx"
+    },
+    {
+      "rfilename": "onnx/decoder_model_merged_int8.onnx"
+    },
+    {
+      "rfilename": "onnx/decoder_model_merged_q4.onnx"
+    },
+    {
+      "rfilename": "onnx/decoder_model_merged_q4f16.onnx"
+    },
+    {
+      "rfilename": "onnx/decoder_model_merged_quantized.onnx"
+    },
+    {
+      "rfilename": "onnx/decoder_model_merged_uint8.onnx"
+    },
+    {
+      "rfilename": "onnx/embed_tokens.onnx"
+    },
+    {
+      "rfilename": "onnx/embed_tokens_bnb4.onnx"
+    },
+    {
+      "rfilename": "onnx/embed_tokens_fp16.onnx"
+    },
+    {
+      "rfilename": "onnx/embed_tokens_int8.onnx"
+    },
+    {
+      "rfilename": "onnx/embed_tokens_q4.onnx"
+    },
+    {
+      "rfilename": "onnx/embed_tokens_q4f16.onnx"
+    },
+    {
+      "rfilename": "onnx/embed_tokens_quantized.onnx"
+    },
+    {
+      "rfilename": "onnx/embed_tokens_uint8.onnx"
+    },
+    {
+      "rfilename": "onnx/vision_encoder.onnx"
+    },
+    {
+      "rfilename": "onnx/vision_encoder_bnb4.onnx"
+    },
+    {
+      "rfilename": "onnx/vision_encoder_fp16.onnx"
+    },
+    {
+      "rfilename": "onnx/vision_encoder_int8.onnx"
+    },
+    {
+      "rfilename": "onnx/vision_encoder_q4.onnx"
+    },
+    {
+      "rfilename": "onnx/vision_encoder_q4f16.onnx"
+    },
+    {
+      "rfilename": "onnx/vision_encoder_quantized.onnx"
+    },
+    {
+      "rfilename": "onnx/vision_encoder_uint8.onnx"
+    },
+    {
+      "rfilename": "preprocessor_config.json"
+    },
+    {
+      "rfilename": "processor_config.json"
+    },
+    {
+      "rfilename": "special_tokens_map.json"
+    },
+    {
+      "rfilename": "tokenizer.json"
+    },
+    {
+      "rfilename": "tokenizer_config.json"
+    },
+    {
+      "rfilename": "vocab.json"
+    }
+  ],
+  "spaces": [
+    "tardellirs/model-pulse",
+    "aquanode/gpu-vram-calculator",
+    "stasokilend/Wan_22_Uncensored_CustomLora",
+    "webml-community/smolvlm-realtime-webgpu",
+    "HuggingFaceTB/smolvlm-web-benchmarking-all",
+    "sergiopaniego/vqa_autonomous_driving_smolvlm2",
+    "team-wonders/wonders-prolific-test",
+    "czd358121692/MusicalToy4Frank_Standalone",
+    "mrdbourke/FoodExtract-Vision-v1",
+    "sizzlebop/smolvlm-realtime-webgpu",
+    "ashishninehertz/Camera_Interaction_App",
+    "build-small-hackathon/BackroomsSpreadsheet",
+    "build-small-hackathon/the-committee",
+    "YasirAhmad0810/smol_vlm2",
+    "Kuberwastaken/AsianMOM",
+    "ginipick/smolvlm-realtime-webgpu",
+    "prockot/biomed-paper-extractor",
+    "mkwemk/calculator",
+    "ZXdevil/cap",
+    "Prof-Hunt/TECH_TALES",
+    "Sudhit/SmolVLM",
+    "Geraldine/Image-to-text-SmolVLM-for-Omeka",
+    "ligadacomunidade/ilheus",
+    "YasirAhmad0810/smolvlm-realtime-webgpu",
+    "BK-V/VLM",
+    "sumanjali19/smolvlm-realtime-webgpu",
+    "eatro/smolvlm-yassine",
+    "igmeMarcial/smolvlm-api",
+    "aliroohan179/image",
+    "harshitha1410/smolvlm-webcam-demo",
+    "Sumit9131/SmolVLM-500M",
+    "Sumit9131/Food-app",
+    "KarthiEz/gemmasign",
+    "team-wonders/ema-dev",
+    "cttinga24/WebApp2",
+    "ajayvikram/FoodExtract-Vision-v1",
+    "ninjals/FoodExtract-Vision-v1",
+    "babaTEEpe/Toun",
+    "samuelolubukun/SmolVLM-500M-Instruct-Fastapi",
+    "SkoleGPTudvidelse/Skolegptudvidelse",
+    "kooldaa/Final_Assignment_Template",
+    "pantelism/FoodExtract-Vision-v1",
+    "apssouza22/webgpu-cluster",
+    "2026hbk/FoodExtract-Vision-v1",
+    "goki06/fassadencheck-vision",
+    "jhkim3217/FoodExtract-Vision-v1",
+    "YoussefSharawy91/BackroomsSpreadsheet",
+    "Valiye/chest-xray-report",
+    "renne1017/vlm-camera-suggest",
+    "chanifrusydi/FoodExtract-Vision-v1",
+    "sandipan04/smart-companion-backend",
+    "cultural-captions/wonders-prolific-test",
+    "sujalgumme/smolvlm-document-qa",
+    "AinzOoalGowns/TestDect",
+    "amitbenavraham/fitfuel-app",
+    "AMIXXM/Dana",
+    "cultural-captions/wonders-UI-Enhancement",
+    "cattolatte/satquery",
+    "BuildingTHEITGUY/Campus-Vision-Lab",
+    "yumu908/Camera_Interaction_App",
+    "Hoksomax/SmolVLM-500M-Instruct-Demo",
+    "akadevs/SmolVLM-500M-Instruct-simplyakib",
+    "shekharrrr/receiptqa-demo",
+    "Arin460jq/data-460-wk8",
+    "tqing2025/biomed-paper-extractor",
+    "Sourishdey05/KrishiNet-VLM",
+    "fastgpu/vram-and-gpu-cost-calculator",
+    "twisted322/Wan_22_Uncensored_CustomLora",
+    "mrHashe/Wan_22_test",
+    "mrHashe/Wan_22_Personal",
+    "mrHashe/Wan22personal"
+  ],
+  "createdAt": "2025-01-20T14:24:51.000Z",
+  "safetensors": {
+    "parameters": {
+      "BF16": 507482304
+    },
+    "total": 507482304
+  },
+  "usedStorage": 10625255052
+}

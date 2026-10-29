@@ -1,0 +1,53 @@
+{
+  "args": {
+    "features": "artifacts/hm/clip/features.npz",
+    "mode": "gate",
+    "seed": 42,
+    "epochs": 1,
+    "batch_size": 256,
+    "device": "cpu",
+    "max_train_queries": 1024,
+    "allow_partial_images": true
+  },
+  "train_queries": 1024,
+  "candidate_items": 41585,
+  "image_coverage": 0.014187808148562908,
+  "logs": [
+    {
+      "epoch": 1,
+      "loss": 7.339723229408264,
+      "val": {
+        "recall@12": 4.432951606944957e-05,
+        "ndcg@12": 2.5655234275458907e-05,
+        "map@12": 9.851003570988795e-06
+      }
+    }
+  ],
+  "selection_val_ndcg": 2.5655234275458907e-05,
+  "test": {
+    "recall@12": 0.0001458545573261772,
+    "ndcg@12": 6.93585842897419e-05,
+    "map@12": 2.321640236181052e-05
+  },
+  "seconds": 1.4141750420094468,
+  "frozen_clip": true,
+  "feature_sha256": "08e0dec93276d7ee9451a073cb6d4fceea7b69477f51de27c2e12f79b2fd5844",
+  "model_sha256": "cdbc218e8f0054f1dfe10ab61d8da22c879885327700e2e38ef064b85af8e8bc",
+  "limitations": [
+    "Exploratory test, not a blind holdout",
+    "Uniform sampled contrastive training candidates; full-catalogue evaluation",
+    "Training-known positives excluded from negatives; unobserved items are not dislike labels",
+    "Image-only arm uses text fallback where images are absent"
+  ],
+  "protocol": {
+    "train_start": "2020-06-17",
+    "validation_start": "2020-09-09",
+    "test_start": "2020-09-16",
+    "end_exclusive": "2020-09-23",
+    "max_users": 100000,
+    "min_train_purchases": 5,
+    "history_length": 30,
+    "selection_seed": 42,
+    "evaluation_k": 12
+  }
+}

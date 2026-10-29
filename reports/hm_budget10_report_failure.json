@@ -1,0 +1,7 @@
+{
+  "stage": "report serialization after weights/index saved",
+  "error": "NameError: Path",
+  "executed_trainer_sha256": "9f8e96d6a9e38c114ab2358b8a4020f5c47ad927a9948d04c63be055a81c6609",
+  "weights_saved": true,
+  "logs_saved": true
+}

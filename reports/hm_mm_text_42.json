@@ -1,0 +1,71 @@
+{
+  "args": {
+    "features": "artifacts/hm/clip/features.npz",
+    "mode": "text",
+    "seed": 42,
+    "epochs": 3,
+    "batch_size": 256,
+    "device": "cpu",
+    "max_train_queries": 0,
+    "allow_partial_images": false
+  },
+  "train_queries": 212658,
+  "candidate_items": 41585,
+  "image_coverage": 0.014187808148562908,
+  "logs": [
+    {
+      "epoch": 1,
+      "loss": 6.797566060985469,
+      "val": {
+        "recall@12": 0.005584263728326626,
+        "ndcg@12": 0.0033865472693669113,
+        "map@12": 0.0018304985425677822
+      }
+    },
+    {
+      "epoch": 2,
+      "loss": 6.666842334967658,
+      "val": {
+        "recall@12": 0.011134270211638072,
+        "ndcg@12": 0.006960890487989517,
+        "map@12": 0.003941820650365085
+      }
+    },
+    {
+      "epoch": 3,
+      "loss": 6.588966931963943,
+      "val": {
+        "recall@12": 0.01607905226734917,
+        "ndcg@12": 0.009983426591906175,
+        "map@12": 0.005775797625689564
+      }
+    }
+  ],
+  "selection_val_ndcg": 0.009983426591906175,
+  "test": {
+    "recall@12": 0.011496616834275329,
+    "ndcg@12": 0.007028809116662257,
+    "map@12": 0.003862440021609746
+  },
+  "seconds": 46.332392667012755,
+  "frozen_clip": true,
+  "feature_sha256": "08e0dec93276d7ee9451a073cb6d4fceea7b69477f51de27c2e12f79b2fd5844",
+  "model_sha256": "64806679f64f4ffbf3e94ba873f0bbec0842ebd6cc8958369d4e8270830d7461",
+  "limitations": [
+    "Exploratory test, not a blind holdout",
+    "Uniform sampled contrastive training candidates; full-catalogue evaluation",
+    "Training-known positives excluded from negatives; unobserved items are not dislike labels",
+    "Image-only arm uses text fallback where images are absent"
+  ],
+  "protocol": {
+    "train_start": "2020-06-17",
+    "validation_start": "2020-09-09",
+    "test_start": "2020-09-16",
+    "end_exclusive": "2020-09-23",
+    "max_users": 100000,
+    "min_train_purchases": 5,
+    "history_length": 30,
+    "selection_seed": 42,
+    "evaluation_k": 12
+  }
+}

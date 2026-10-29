@@ -1,0 +1,56 @@
+{
+  "args": {
+    "features": "artifacts/hm/clip/features.npz",
+    "mode": "text",
+    "seed": 42,
+    "epochs": 1,
+    "batch_size": 256,
+    "device": "cpu",
+    "max_train_queries": 1024,
+    "run_tag": "report-smoke",
+    "allow_partial_images": false
+  },
+  "train_queries": 1024,
+  "candidate_items": 41585,
+  "image_coverage": 0.014187808148562908,
+  "logs": [
+    {
+      "epoch": 1,
+      "loss": 7.338714957237244,
+      "val": {
+        "recall@12": 4.432951606944957e-05,
+        "ndcg@12": 2.5655234275458907e-05,
+        "map@12": 9.851003570988795e-06
+      }
+    }
+  ],
+  "selection_val_ndcg": 2.5655234275458907e-05,
+  "test": {
+    "recall@12": 0.00017242768657787792,
+    "ndcg@12": 7.946835922854878e-05,
+    "map@12": 2.5430829799452243e-05
+  },
+  "seconds": 1.265334084047936,
+  "frozen_clip": true,
+  "feature_sha256": "08e0dec93276d7ee9451a073cb6d4fceea7b69477f51de27c2e12f79b2fd5844",
+  "trainer_sha256": "f4eb1520b6408790658c60565fb5de8df5f8341af22bd10e333384f98005ce8e",
+  "data_queries_sha256": "75c0803a69812a5ca3883e4ef2a1c528c4312b484845e5fce662f7d9be19c671",
+  "model_sha256": "e49fc1595c14d30ba94f68f7bd40019306dd3068ef81388f0721df81178eb4d0",
+  "limitations": [
+    "Exploratory test, not a blind holdout",
+    "Uniform sampled contrastive training candidates; full-catalogue evaluation",
+    "Training-known positives excluded from negatives; unobserved items are not dislike labels",
+    "Image-only arm uses text fallback where images are absent"
+  ],
+  "protocol": {
+    "train_start": "2020-06-17",
+    "validation_start": "2020-09-09",
+    "test_start": "2020-09-16",
+    "end_exclusive": "2020-09-23",
+    "max_users": 100000,
+    "min_train_purchases": 5,
+    "history_length": 30,
+    "selection_seed": 42,
+    "evaluation_k": 12
+  }
+}

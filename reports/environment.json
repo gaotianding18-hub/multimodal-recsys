@@ -1,0 +1,24 @@
+{
+  "purpose": "random_tensor_hardware_probe_not_recommendation_experiment",
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "torch": "2.8.0",
+  "device": "mps",
+  "mps_available": true,
+  "cpu_threads": 4,
+  "batch_size": 128,
+  "input_dim": 1024,
+  "output_dim": 128,
+  "train_steps": 50,
+  "warmup_steps": 5,
+  "train_step_ms": 0.43677665991708636,
+  "inference_batch_ms": 0.2151612500892952,
+  "finite_loss": true,
+  "prediction_shape": [
+    128,
+    128
+  ],
+  "mps_current_allocated_bytes": 6688768,
+  "mps_driver_allocated_bytes": 36421632,
+  "limitations": "Not a real-data training/evaluation/inference closure; memory is a final snapshot, not peak; latency is not service latency."
+}

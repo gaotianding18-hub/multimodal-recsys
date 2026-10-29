@@ -1,0 +1,14 @@
+{
+  "version": "55be40cefea2",
+  "http_status_checks": [
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    200
+  ],
+  "log_records": 417,
+  "log_field_whitelist_verified": true
+}

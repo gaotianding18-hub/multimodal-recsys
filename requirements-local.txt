@@ -1,0 +1,4 @@
+# Minimal local feasibility environment; not the final experiment lockfile.
+torch==2.8.0
+numpy==1.26.4
+pillow==11.3.0

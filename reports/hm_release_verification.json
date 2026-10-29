@@ -1,0 +1,12 @@
+{
+  "version": "b6220dc58817",
+  "matching_test_histories": 30,
+  "fallback_and_unknown_checks": true,
+  "benchmark": "engine calls, not HTTP; one thread; 5 warmups then 100 calls across 30 users",
+  "engine_p50_ms": 1.4636254927609116,
+  "engine_p95_ms": 1.6666919982526451,
+  "process_peak_rss_bytes_macos": 1685585920,
+  "candidate_items": 41585,
+  "k": 12,
+  "manifest": "artifacts/hm/release.text-candidate.json"
+}

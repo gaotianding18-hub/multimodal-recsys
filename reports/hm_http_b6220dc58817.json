@@ -1,0 +1,75 @@
+{
+  "health": {
+    "status": "ok",
+    "version": "b6220dc58817",
+    "candidate_items": 41585,
+    "methods": [
+      "repeat",
+      "id",
+      "semantic"
+    ]
+  },
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "hardware": "MacBook Air M5 24GB, shared host",
+  "workload": "localhost HTTP; 30 anonymous user histories; k12; 5warmups per method; CPU torch threads1",
+  "results": [
+    {
+      "method": "repeat",
+      "concurrency": 1,
+      "requests": 100,
+      "errors": 0,
+      "p50_ms": 0.9767715237103403,
+      "p95_ms": 1.0459542187163606,
+      "requests_per_second": 1006.4749860844254
+    },
+    {
+      "method": "repeat",
+      "concurrency": 4,
+      "requests": 100,
+      "errors": 0,
+      "p50_ms": 3.5828335385303944,
+      "p95_ms": 5.444385405280627,
+      "requests_per_second": 1090.9433025234798
+    },
+    {
+      "method": "id",
+      "concurrency": 1,
+      "requests": 100,
+      "errors": 0,
+      "p50_ms": 1.0955834877677262,
+      "p95_ms": 1.1394750006729737,
+      "requests_per_second": 903.0181125083333
+    },
+    {
+      "method": "id",
+      "concurrency": 4,
+      "requests": 100,
+      "errors": 0,
+      "p50_ms": 2.953000512206927,
+      "p95_ms": 3.527066367678344,
+      "requests_per_second": 1351.5035413595801
+    },
+    {
+      "method": "semantic",
+      "concurrency": 1,
+      "requests": 100,
+      "errors": 0,
+      "p50_ms": 1.7815415340010077,
+      "p95_ms": 1.955710118636489,
+      "requests_per_second": 544.6293083123288
+    },
+    {
+      "method": "semantic",
+      "concurrency": 4,
+      "requests": 100,
+      "errors": 0,
+      "p50_ms": 5.9822915063705295,
+      "p95_ms": 7.2205982462037355,
+      "requests_per_second": 661.854065564807
+    }
+  ],
+  "limitations": [
+    "Short warm synthetic request workload, not real traffic or SLA",
+    "Server RSS/peak memory not measured by this client benchmark"
+  ]
+}

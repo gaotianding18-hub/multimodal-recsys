@@ -1,0 +1,117 @@
+{
+  "args": {
+    "device": "mps",
+    "epochs": 3,
+    "batch_size": 16,
+    "seed": 43
+  },
+  "task": "Grouped product image-text contrastive CLIP LoRA fine-tuning, not purchase prediction",
+  "split_items": {
+    "train": 413,
+    "val": 93,
+    "test": 84
+  },
+  "trainable_parameters": 51200,
+  "target_modules": [
+    "visual.transformer.resblocks.11.mlp.c_fc.a",
+    "visual.transformer.resblocks.11.mlp.c_fc.b",
+    "visual.transformer.resblocks.11.mlp.c_proj.a",
+    "visual.transformer.resblocks.11.mlp.c_proj.b",
+    "transformer.resblocks.11.mlp.c_fc.a",
+    "transformer.resblocks.11.mlp.c_fc.b",
+    "transformer.resblocks.11.mlp.c_proj.a",
+    "transformer.resblocks.11.mlp.c_proj.b"
+  ],
+  "base_sha_before": "0f0ff2b268a78dd277e35a5411f6863c73db95cee8216eeb39f47195a20566f7",
+  "base_sha_after": "0f0ff2b268a78dd277e35a5411f6863c73db95cee8216eeb39f47195a20566f7",
+  "adapter_l1_change_last": {
+    "visual.transformer.resblocks.11.mlp.c_fc.a": 20.9794864654541,
+    "visual.transformer.resblocks.11.mlp.c_fc.b": 49.96651077270508,
+    "visual.transformer.resblocks.11.mlp.c_proj.a": 94.63204956054688,
+    "visual.transformer.resblocks.11.mlp.c_proj.b": 15.351007461547852,
+    "transformer.resblocks.11.mlp.c_fc.a": 13.882918357849121,
+    "transformer.resblocks.11.mlp.c_fc.b": 28.8199462890625,
+    "transformer.resblocks.11.mlp.c_proj.a": 69.32245635986328,
+    "transformer.resblocks.11.mlp.c_proj.b": 12.669447898864746
+  },
+  "gradient_l1_evidence": {
+    "visual.": 172.34880828857422,
+    "transformer.": 68.55847597122192
+  },
+  "baseline": {
+    "val": {
+      "image_to_text_recall@1": 0.5053763440860215,
+      "image_to_text_recall@5": 0.7634408602150538,
+      "image_to_text_recall@10": 0.8602150537634409,
+      "text_to_image_recall@1": 0.5483870967741935,
+      "text_to_image_recall@5": 0.8494623655913979,
+      "text_to_image_recall@10": 0.956989247311828
+    },
+    "test": {
+      "image_to_text_recall@1": 0.6071428571428571,
+      "image_to_text_recall@5": 0.8928571428571429,
+      "image_to_text_recall@10": 0.9761904761904762,
+      "text_to_image_recall@1": 0.6071428571428571,
+      "text_to_image_recall@5": 0.9047619047619048,
+      "text_to_image_recall@10": 0.9523809523809523
+    }
+  },
+  "logs": [
+    {
+      "epoch": 1,
+      "loss": 1.504478280360882,
+      "val": {
+        "image_to_text_recall@1": 0.5161290322580645,
+        "image_to_text_recall@5": 0.7849462365591398,
+        "image_to_text_recall@10": 0.9354838709677419,
+        "text_to_image_recall@1": 0.5483870967741935,
+        "text_to_image_recall@5": 0.8924731182795699,
+        "text_to_image_recall@10": 0.967741935483871
+      }
+    },
+    {
+      "epoch": 2,
+      "loss": 1.1943048284603999,
+      "val": {
+        "image_to_text_recall@1": 0.5268817204301075,
+        "image_to_text_recall@5": 0.8387096774193549,
+        "image_to_text_recall@10": 0.967741935483871,
+        "text_to_image_recall@1": 0.5806451612903226,
+        "text_to_image_recall@5": 0.9032258064516129,
+        "text_to_image_recall@10": 0.978494623655914
+      }
+    },
+    {
+      "epoch": 3,
+      "loss": 0.8042508925382907,
+      "val": {
+        "image_to_text_recall@1": 0.5483870967741935,
+        "image_to_text_recall@5": 0.8494623655913979,
+        "image_to_text_recall@10": 0.989247311827957,
+        "text_to_image_recall@1": 0.6021505376344086,
+        "text_to_image_recall@5": 0.9247311827956989,
+        "text_to_image_recall@10": 0.956989247311828
+      }
+    }
+  ],
+  "test": {
+    "image_to_text_recall@1": 0.6904761904761905,
+    "image_to_text_recall@5": 0.9285714285714286,
+    "image_to_text_recall@10": 0.9761904761904762,
+    "text_to_image_recall@1": 0.6190476190476191,
+    "text_to_image_recall@5": 0.9047619047619048,
+    "text_to_image_recall@10": 0.9523809523809523
+  },
+  "seconds": 18.55106191697996,
+  "mps_allocated_end_bytes": 613746432,
+  "mps_driver_end_bytes": 1642135552,
+  "checkpoint_sha256": "938c9bef841868e12a03b75932bb1c51a86b93ae9993dcac86fed9dce4143ea5",
+  "dataset_sha256": "c30cc5477c05426358990ec62298368ab0de7de7f26627160409686e79891126",
+  "limitations": [
+    "590 available-image products selected non-randomly",
+    "Per-run seed; stability assessed separately",
+    "84 held-out items, not large VLM fine-tuning",
+    "Pairs split by family/exact image; behavior protocol is separate",
+    "End memory values are not peak VRAM"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "images": 590,
+  "counts": {
+    "train_queries_with_visual_targets": 9475,
+    "train_visual_targets": 10865,
+    "train_aligned_queries": 1794,
+    "test_queries_with_visual_targets": 510,
+    "test_visual_targets": 594,
+    "test_aligned_queries": 124,
+    "val_queries_with_visual_targets": 606,
+    "val_visual_targets": 725,
+    "val_aligned_queries": 150
+  },
+  "aligned_users": {
+    "train": 1580,
+    "val": 150,
+    "test": 124
+  }
+}

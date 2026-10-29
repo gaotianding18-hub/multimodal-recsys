@@ -1,0 +1,78 @@
+{
+  "model_version": "c4f3dee35cc0",
+  "results": {
+    "full": {
+      "metrics": {
+        "json_valid_rate": 1.0,
+        "product_type_agreement": 0.5376344086021505,
+        "color_agreement": 0.5698924731182796,
+        "joint_agreement": 0.3010752688172043,
+        "product_type_macro_recall": 0.39664689405173836,
+        "color_macro_recall": 0.34539556563366086,
+        "items": 93
+      },
+      "visual_tokens": 64,
+      "p50_ms": 471.13716701278463,
+      "p95_ms": 532.8958589932881,
+      "mps_allocated_end_bytes": 2031819008,
+      "mps_driver_end_bytes": 3028516864
+    },
+    "uniform32": {
+      "metrics": {
+        "json_valid_rate": 1.0,
+        "product_type_agreement": 0.5161290322580645,
+        "color_agreement": 0.5483870967741935,
+        "joint_agreement": 0.3118279569892473,
+        "product_type_macro_recall": 0.4058329214038557,
+        "color_macro_recall": 0.29550894431846814,
+        "items": 93
+      },
+      "visual_tokens": 32,
+      "p50_ms": 461.8613750208169,
+      "p95_ms": 508.48176641156897,
+      "mps_allocated_end_bytes": 2031710976,
+      "mps_driver_end_bytes": 3028926464
+    },
+    "norm32": {
+      "metrics": {
+        "json_valid_rate": 1.0,
+        "product_type_agreement": 0.5591397849462365,
+        "color_agreement": 0.5806451612903226,
+        "joint_agreement": 0.34408602150537637,
+        "product_type_macro_recall": 0.42828307793705717,
+        "color_macro_recall": 0.3361048122952885,
+        "items": 93
+      },
+      "visual_tokens": 32,
+      "p50_ms": 471.6830829856917,
+      "p95_ms": 541.9588081655091,
+      "mps_allocated_end_bytes": 2031714560,
+      "mps_driver_end_bytes": 3024732160
+    },
+    "uniform16": {
+      "metrics": {
+        "json_valid_rate": 1.0,
+        "product_type_agreement": 0.4838709677419355,
+        "color_agreement": 0.5053763440860215,
+        "joint_agreement": 0.26881720430107525,
+        "product_type_macro_recall": 0.3294200032954358,
+        "color_macro_recall": 0.32051524313429075,
+        "items": 93
+      },
+      "visual_tokens": 16,
+      "p50_ms": 486.5603749640286,
+      "p95_ms": 530.3483833675273,
+      "mps_allocated_end_bytes": 2031710976,
+      "mps_driver_end_bytes": 3029237760
+    }
+  },
+  "protocol": "93 grouped validation items, fixed order, batch1 float32 MPS, greedy max60, includes vision encoder and generation but excludes image preprocessing",
+  "hardware": "MacBook Air M5 24GB shared host",
+  "limitations": [
+    "Single pass, no random order or repeats",
+    "Norm/uniform retention are existing simple baselines, not novel algorithms",
+    "No test-set selection",
+    "End memory not peak; token output length affects latency",
+    "Vision encoder cost unchanged; only language-side visual tokens reduced"
+  ]
+}

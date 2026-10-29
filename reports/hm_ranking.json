@@ -1,0 +1,57 @@
+{
+  "test": {
+    "recall@12": 0.016848141964808612,
+    "ndcg@12": 0.012795139309772842,
+    "map@12": 0.007772309098558456,
+    "retrieval_recall@100": 0.06355369390060837
+  },
+  "logs": [
+    {
+      "epoch": 1,
+      "loss": 0.25293624266605513,
+      "val": {
+        "recall@12": 0.017944271177769845,
+        "ndcg@12": 0.014032068511172063,
+        "map@12": 0.008759357130254004,
+        "retrieval_recall@100": 0.06483979092697596
+      }
+    },
+    {
+      "epoch": 2,
+      "loss": 0.2257071385063706,
+      "val": {
+        "recall@12": 0.016449111724098575,
+        "ndcg@12": 0.013199318642450955,
+        "map@12": 0.008450042561693129,
+        "retrieval_recall@100": 0.06483979092697596
+      }
+    },
+    {
+      "epoch": 3,
+      "loss": 0.22467535151399573,
+      "val": {
+        "recall@12": 0.01772283911233527,
+        "ndcg@12": 0.014387610566879577,
+        "map@12": 0.009034718342275743,
+        "retrieval_recall@100": 0.06483979092697596
+      }
+    }
+  ],
+  "selection_val_ndcg": 0.014387610566879577,
+  "seconds": 45.95711362501606,
+  "retriever": {
+    "epochs": 3,
+    "batch_size": 256,
+    "dim": 64,
+    "seed": 43,
+    "device": "cpu",
+    "negative_strategy": "random"
+  },
+  "ranking_negatives": "uniform unobserved items excluding training-known positives",
+  "limitations": [
+    "Frozen retriever fitted on same training histories; ranking training uses uniform items, not fitted top-k.",
+    "Training popularity is aggregate training-only, not causal per-day snapshot.",
+    "Exploratory test already inspected; no blind-test claim.",
+    "No CTR probabilities."
+  ]
+}

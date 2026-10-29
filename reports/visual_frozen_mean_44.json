@@ -1,0 +1,119 @@
+{
+  "args": {
+    "source": "frozen",
+    "mode": "mean",
+    "seed": 44,
+    "epochs": 10
+  },
+  "train_queries": 1794,
+  "candidates": 590,
+  "logs": [
+    {
+      "epoch": 1,
+      "loss": 4.626188985232649,
+      "val": {
+        "recall@12": 0.3,
+        "ndcg@12": 0.192347498480815,
+        "map@12": 0.14982804232804228
+      }
+    },
+    {
+      "epoch": 2,
+      "loss": 4.092600904662033,
+      "val": {
+        "recall@12": 0.38666666666666666,
+        "ndcg@12": 0.2740272758697148,
+        "map@12": 0.23055603655603657
+      }
+    },
+    {
+      "epoch": 3,
+      "loss": 3.7151630788013854,
+      "val": {
+        "recall@12": 0.41,
+        "ndcg@12": 0.2855794791403461,
+        "map@12": 0.24019668911335576
+      }
+    },
+    {
+      "epoch": 4,
+      "loss": 3.5270940106490563,
+      "val": {
+        "recall@12": 0.36000000000000004,
+        "ndcg@12": 0.28040402382761503,
+        "map@12": 0.25035802469135804
+      }
+    },
+    {
+      "epoch": 5,
+      "loss": 3.3145179748535156,
+      "val": {
+        "recall@12": 0.39000000000000007,
+        "ndcg@12": 0.2973065599072796,
+        "map@12": 0.2630826919993587
+      }
+    },
+    {
+      "epoch": 6,
+      "loss": 3.183446612851373,
+      "val": {
+        "recall@12": 0.37777777777777777,
+        "ndcg@12": 0.30035559927997935,
+        "map@12": 0.2695401635401636
+      }
+    },
+    {
+      "epoch": 7,
+      "loss": 3.0634208794297844,
+      "val": {
+        "recall@12": 0.4111111111111111,
+        "ndcg@12": 0.303633018413137,
+        "map@12": 0.26371741221741224
+      }
+    },
+    {
+      "epoch": 8,
+      "loss": 2.847733540781613,
+      "val": {
+        "recall@12": 0.37,
+        "ndcg@12": 0.3027819759002914,
+        "map@12": 0.2750185185185185
+      }
+    },
+    {
+      "epoch": 9,
+      "loss": 2.7493412823512635,
+      "val": {
+        "recall@12": 0.4088888888888889,
+        "ndcg@12": 0.313032490382244,
+        "map@12": 0.2778240740740741
+      }
+    },
+    {
+      "epoch": 10,
+      "loss": 2.680830190921652,
+      "val": {
+        "recall@12": 0.39555555555555555,
+        "ndcg@12": 0.31262207988484514,
+        "map@12": 0.2808606701940036
+      }
+    }
+  ],
+  "selection_val_ndcg": 0.313032490382244,
+  "test": {
+    "recall@12": 0.40524193548387094,
+    "ndcg@12": 0.29728285213812566,
+    "map@12": 0.2565355455476423
+  },
+  "seconds": 0.8965480829938315,
+  "feature_sha256": "08e0dec93276d7ee9451a073cb6d4fceea7b69477f51de27c2e12f79b2fd5844",
+  "model_sha256": "ccd183ad0b9bd0c7a5a3bc7f0f9ff8a0a0b731c34933d3bba7fd514a79e3b32f",
+  "evaluation": "Conditional image-available histories and targets, 590 full candidates. NOT original 41585-catalogue metric.",
+  "history_length": 10,
+  "limitations": [
+    "Nonrandom image availability selection",
+    "150val/124test query conditional subset",
+    "Image/text arms both include ID features",
+    "All modes have same training budget and sampling"
+  ]
+}

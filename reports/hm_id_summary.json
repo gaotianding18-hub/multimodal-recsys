@@ -1,0 +1,281 @@
+{
+  "runs": [
+    {
+      "model": "ID/history BPR baseline, no multimodal encoder",
+      "args": {
+        "epochs": 3,
+        "batch_size": 256,
+        "dim": 64,
+        "seed": 42,
+        "device": "cpu",
+        "negative_strategy": "random"
+      },
+      "candidate_items": 41585,
+      "train_queries": 212658,
+      "baselines": {
+        "val": {
+          "recall@12": 0.008642309709447288,
+          "ndcg@12": 0.0060111151513702905,
+          "map@12": 0.00293990779939907
+        },
+        "test": {
+          "recall@12": 0.00867347482430156,
+          "ndcg@12": 0.006154362103034402,
+          "map@12": 0.00328150494217842
+        }
+      },
+      "selection_val_ndcg": 0.008497685135036995,
+      "test": {
+        "recall@12": 0.013679148230102162,
+        "ndcg@12": 0.008704455205968548,
+        "map@12": 0.004488432121392682
+      },
+      "elapsed_seconds": 17.08548750000773,
+      "protocol": {
+        "train_start": "2020-06-17",
+        "validation_start": "2020-09-09",
+        "test_start": "2020-09-16",
+        "end_exclusive": "2020-09-23",
+        "max_users": 100000,
+        "min_train_purchases": 5,
+        "history_length": 30,
+        "selection_seed": 42,
+        "evaluation_k": 12
+      },
+      "model_sha256": "7d389aab45dfbf7c8d67da70efab58b591819f2a87e2be2bc7ec50c29fc1ece8"
+    },
+    {
+      "model": "ID/history BPR baseline, no multimodal encoder",
+      "args": {
+        "epochs": 3,
+        "batch_size": 256,
+        "dim": 64,
+        "seed": 43,
+        "device": "cpu",
+        "negative_strategy": "random"
+      },
+      "candidate_items": 41585,
+      "train_queries": 212658,
+      "baselines": {
+        "val": {
+          "recall@12": 0.008642309709447288,
+          "ndcg@12": 0.0060111151513702905,
+          "map@12": 0.00293990779939907
+        },
+        "test": {
+          "recall@12": 0.00867347482430156,
+          "ndcg@12": 0.006154362103034402,
+          "map@12": 0.00328150494217842
+        }
+      },
+      "selection_val_ndcg": 0.00910085066554935,
+      "test": {
+        "recall@12": 0.014013603503220414,
+        "ndcg@12": 0.008589790851163346,
+        "map@12": 0.004176314759688562
+      },
+      "elapsed_seconds": 17.141106499999296,
+      "protocol": {
+        "train_start": "2020-06-17",
+        "validation_start": "2020-09-09",
+        "test_start": "2020-09-16",
+        "end_exclusive": "2020-09-23",
+        "max_users": 100000,
+        "min_train_purchases": 5,
+        "history_length": 30,
+        "selection_seed": 42,
+        "evaluation_k": 12
+      },
+      "model_sha256": "8d60edbc7c23c772124d98f814a3f0897505bb4374e326a57a6045ba670e047c"
+    },
+    {
+      "model": "ID/history BPR baseline, no multimodal encoder",
+      "args": {
+        "epochs": 3,
+        "batch_size": 256,
+        "dim": 64,
+        "seed": 44,
+        "device": "cpu",
+        "negative_strategy": "random"
+      },
+      "candidate_items": 41585,
+      "train_queries": 212658,
+      "baselines": {
+        "val": {
+          "recall@12": 0.008642309709447288,
+          "ndcg@12": 0.0060111151513702905,
+          "map@12": 0.00293990779939907
+        },
+        "test": {
+          "recall@12": 0.00867347482430156,
+          "ndcg@12": 0.006154362103034402,
+          "map@12": 0.00328150494217842
+        }
+      },
+      "selection_val_ndcg": 0.008948063896419967,
+      "test": {
+        "recall@12": 0.015777368978977857,
+        "ndcg@12": 0.009009943637540417,
+        "map@12": 0.004040098769291844
+      },
+      "elapsed_seconds": 17.095020707987715,
+      "protocol": {
+        "train_start": "2020-06-17",
+        "validation_start": "2020-09-09",
+        "test_start": "2020-09-16",
+        "end_exclusive": "2020-09-23",
+        "max_users": 100000,
+        "min_train_purchases": 5,
+        "history_length": 30,
+        "selection_seed": 42,
+        "evaluation_k": 12
+      },
+      "model_sha256": "64c68beaeb119bbd6adc597446bedc47aad647fb4900cac9d7de37f0ee3c323c"
+    },
+    {
+      "model": "ID/history BPR baseline, no multimodal encoder",
+      "args": {
+        "epochs": 3,
+        "batch_size": 256,
+        "dim": 64,
+        "seed": 42,
+        "device": "cpu",
+        "negative_strategy": "mixed"
+      },
+      "candidate_items": 41585,
+      "train_queries": 212658,
+      "baselines": {
+        "val": {
+          "recall@12": 0.008642309709447288,
+          "ndcg@12": 0.0060111151513702905,
+          "map@12": 0.00293990779939907
+        },
+        "test": {
+          "recall@12": 0.00867347482430156,
+          "ndcg@12": 0.006154362103034402,
+          "map@12": 0.00328150494217842
+        }
+      },
+      "selection_val_ndcg": 0.008695122352191925,
+      "test": {
+        "recall@12": 0.012306004116508779,
+        "ndcg@12": 0.007925801490281756,
+        "map@12": 0.0041234577756829064
+      },
+      "elapsed_seconds": 19.278755875013303,
+      "protocol": {
+        "train_start": "2020-06-17",
+        "validation_start": "2020-09-09",
+        "test_start": "2020-09-16",
+        "end_exclusive": "2020-09-23",
+        "max_users": 100000,
+        "min_train_purchases": 5,
+        "history_length": 30,
+        "selection_seed": 42,
+        "evaluation_k": 12
+      },
+      "model_sha256": "c172864ab31307a9e9a71ae66789bdcff8ef9b7a70e2afcc4f35618f23891fa9"
+    },
+    {
+      "model": "ID/history BPR baseline, no multimodal encoder",
+      "args": {
+        "epochs": 3,
+        "batch_size": 256,
+        "dim": 64,
+        "seed": 43,
+        "device": "cpu",
+        "negative_strategy": "mixed"
+      },
+      "candidate_items": 41585,
+      "train_queries": 212658,
+      "baselines": {
+        "val": {
+          "recall@12": 0.008642309709447288,
+          "ndcg@12": 0.0060111151513702905,
+          "map@12": 0.00293990779939907
+        },
+        "test": {
+          "recall@12": 0.00867347482430156,
+          "ndcg@12": 0.006154362103034402,
+          "map@12": 0.00328150494217842
+        }
+      },
+      "selection_val_ndcg": 0.008596511845270355,
+      "test": {
+        "recall@12": 0.013575106929672166,
+        "ndcg@12": 0.00883142567882671,
+        "map@12": 0.004559141677079832
+      },
+      "elapsed_seconds": 21.417358165956102,
+      "protocol": {
+        "train_start": "2020-06-17",
+        "validation_start": "2020-09-09",
+        "test_start": "2020-09-16",
+        "end_exclusive": "2020-09-23",
+        "max_users": 100000,
+        "min_train_purchases": 5,
+        "history_length": 30,
+        "selection_seed": 42,
+        "evaluation_k": 12
+      },
+      "model_sha256": "19d925e163dcf37003068452f72918f0dece333cad6ff90975e5067bc0c895fc"
+    },
+    {
+      "model": "ID/history BPR baseline, no multimodal encoder",
+      "args": {
+        "epochs": 3,
+        "batch_size": 256,
+        "dim": 64,
+        "seed": 44,
+        "device": "cpu",
+        "negative_strategy": "mixed"
+      },
+      "candidate_items": 41585,
+      "train_queries": 212658,
+      "baselines": {
+        "val": {
+          "recall@12": 0.008642309709447288,
+          "ndcg@12": 0.0060111151513702905,
+          "map@12": 0.00293990779939907
+        },
+        "test": {
+          "recall@12": 0.00867347482430156,
+          "ndcg@12": 0.006154362103034402,
+          "map@12": 0.00328150494217842
+        }
+      },
+      "selection_val_ndcg": 0.008302633585849224,
+      "test": {
+        "recall@12": 0.013302455695206506,
+        "ndcg@12": 0.00877560535770077,
+        "map@12": 0.004546608227560157
+      },
+      "elapsed_seconds": 21.619599291996565,
+      "protocol": {
+        "train_start": "2020-06-17",
+        "validation_start": "2020-09-09",
+        "test_start": "2020-09-16",
+        "end_exclusive": "2020-09-23",
+        "max_users": 100000,
+        "min_train_purchases": 5,
+        "history_length": 30,
+        "selection_seed": 42,
+        "evaluation_k": 12
+      },
+      "model_sha256": "b33f17aa9d87de12b10a5299072e21025b71f928ffa9ca1a919d1b2aaad24421"
+    }
+  ],
+  "selected_on_validation": {
+    "epochs": 3,
+    "batch_size": 256,
+    "dim": 64,
+    "seed": 43,
+    "device": "cpu",
+    "negative_strategy": "random"
+  },
+  "limitations": [
+    "3 epochs fixed before this ablation; mixed uses more scoring computation.",
+    "Exploratory test results already inspected; not a blind final test.",
+    "ID models do not establish multimodal benefit."
+  ]
+}

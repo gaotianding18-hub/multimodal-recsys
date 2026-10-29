@@ -1,5 +1,19 @@
 .venv/
+.venv-kaggle/
+.kaggle/
+kaggle.json
+__pycache__/
 data/
 artifacts/
+.DS_Store
+*.log
+
+logs/
+
+# Local credentials and machine-specific environments
 .env
-__pycache__/
+.env.*
+!.env.example
+.venv*/
+*.pem
+*.key

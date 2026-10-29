@@ -1,0 +1,6 @@
+{
+  "mode": "new_python_process_engine_load_one_measurement_no_HTTP",
+  "import_ms": 465.6649579992518,
+  "engine_load_and_index_validation_ms": 4.170167027041316,
+  "first_engine_inference_ms": 0.27641700580716133
+}

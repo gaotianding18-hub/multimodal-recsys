@@ -1,0 +1,7 @@
+{
+  "stage": "pipeline_stopped",
+  "status": "failed",
+  "updated_unix": 1791713097.745861,
+  "error_type": "RuntimeError",
+  "reason": "Download exited without completion report"
+}

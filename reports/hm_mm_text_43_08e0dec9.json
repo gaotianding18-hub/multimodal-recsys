@@ -1,0 +1,71 @@
+{
+  "args": {
+    "features": "artifacts/hm/clip/features.npz",
+    "mode": "text",
+    "seed": 43,
+    "epochs": 3,
+    "batch_size": 256,
+    "device": "cpu",
+    "max_train_queries": 0,
+    "allow_partial_images": false
+  },
+  "train_queries": 212658,
+  "candidate_items": 41585,
+  "image_coverage": 0.014187808148562908,
+  "logs": [
+    {
+      "epoch": 1,
+      "loss": 6.805714073594296,
+      "val": {
+        "recall@12": 0.004779557141950941,
+        "ndcg@12": 0.002361152989189199,
+        "map@12": 0.0010680160652146858
+      }
+    },
+    {
+      "epoch": 2,
+      "loss": 6.6769652957663785,
+      "val": {
+        "recall@12": 0.00982789784012558,
+        "ndcg@12": 0.00643578038134914,
+        "map@12": 0.0037843910013285738
+      }
+    },
+    {
+      "epoch": 3,
+      "loss": 6.587432335143198,
+      "val": {
+        "recall@12": 0.01369953126627353,
+        "ndcg@12": 0.009044308584127943,
+        "map@12": 0.005376024991235565
+      }
+    }
+  ],
+  "selection_val_ndcg": 0.009044308584127943,
+  "test": {
+    "recall@12": 0.012210637053044104,
+    "ndcg@12": 0.007264251782980147,
+    "map@12": 0.00393418053434493
+  },
+  "seconds": 44.16196462500375,
+  "frozen_clip": true,
+  "feature_sha256": "08e0dec93276d7ee9451a073cb6d4fceea7b69477f51de27c2e12f79b2fd5844",
+  "model_sha256": "d4aec26d2380070a16e5ccdef31f49e1c3cd978c41bd8d34577b94fe28a8c20f",
+  "limitations": [
+    "Exploratory test, not a blind holdout",
+    "Uniform sampled contrastive training candidates; full-catalogue evaluation",
+    "Training-known positives excluded from negatives; unobserved items are not dislike labels",
+    "Image-only arm uses text fallback where images are absent"
+  ],
+  "protocol": {
+    "train_start": "2020-06-17",
+    "validation_start": "2020-09-09",
+    "test_start": "2020-09-16",
+    "end_exclusive": "2020-09-23",
+    "max_users": 100000,
+    "min_train_purchases": 5,
+    "history_length": 30,
+    "selection_seed": 42,
+    "evaluation_k": 12
+  }
+}

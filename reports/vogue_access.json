@@ -1,0 +1,22 @@
+{
+  "revision": "68edb8e1ac43f3718844e00a0f40f4f10173b24b",
+  "results": [
+    {
+      "path": "LICENSE.txt",
+      "error": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+    },
+    {
+      "path": "data/conversation_trials/item_ratings/seeker_ratings.csv",
+      "bytes": 16467,
+      "status": "downloaded"
+    },
+    {
+      "path": "data/fashion_profiles/ratings.csv",
+      "error": "The read operation timed out"
+    },
+    {
+      "path": "data/metadata/item_1.json",
+      "error": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+    }
+  ]
+}

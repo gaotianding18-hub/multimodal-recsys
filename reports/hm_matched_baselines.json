@@ -1,0 +1,45 @@
+{
+  "training_information": "Counts only targets in the same 212658 selected-user training queries; no extra user population",
+  "evaluation": "Full catalogue; week-start histories; OOC targets counted as misses",
+  "results": {
+    "val": {
+      "query_popularity": {
+        "recall@12": 0.010440231977597204,
+        "ndcg@12": 0.007155162025622875,
+        "map@12": 0.0034794966532657188
+      },
+      "query_recent_popularity": {
+        "recall@12": 0.020253814056681238,
+        "ndcg@12": 0.012364828026944021,
+        "map@12": 0.0063480114589583945
+      },
+      "repeat_then_query_recent": {
+        "recall@12": 0.05981783883216415,
+        "ndcg@12": 0.04499051877726715,
+        "map@12": 0.031713227343154925
+      }
+    },
+    "test": {
+      "query_popularity": {
+        "recall@12": 0.012253282047388793,
+        "ndcg@12": 0.008209678055486912,
+        "map@12": 0.004139110095461918
+      },
+      "query_recent_popularity": {
+        "recall@12": 0.017194905374244344,
+        "ndcg@12": 0.010454729088687548,
+        "map@12": 0.005307133026393927
+      },
+      "repeat_then_query_recent": {
+        "recall@12": 0.050991728741045225,
+        "ndcg@12": 0.03839088825747634,
+        "map@12": 0.02694953981776373
+      }
+    }
+  },
+  "limitations": [
+    "Query counts are distinct-day basket occurrences, not unit sales counts.",
+    "Initial history-only baskets are not added to popularity counts.",
+    "Same-day history tie ordering remains deterministic item-ID order."
+  ]
+}

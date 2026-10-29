@@ -1,0 +1,26 @@
+{
+  "counts": {
+    "train": 413,
+    "val": 93,
+    "test": 84
+  },
+  "sha256": {
+    "train": "0c33538e5e98d15897a14bc5c4bd1dcdc17bb1cc55d5a8710852c6db328392e8",
+    "val": "09e76371b3bd7cff45d843ebc42cd1eb38df370d6963dd1b81769f94c2bf2b7f",
+    "test": "53fffd9939a129f2c7f65d3d20df0505f44986dbdab078913f8b74ed9ac52968"
+  },
+  "split": "Existing product family/exact image/exact caption grouped split",
+  "limitations": [
+    "Catalogue labels are not manually verified visual ground truth",
+    "Nonrandom 590 image subset",
+    "Fine color and product taxonomy may be ambiguous",
+    "No material labels or invented user behavior"
+  ],
+  "acceptance": [
+    "Finite loss and actual adapter updates",
+    "Answer-only loss masking",
+    "Frozen base unchanged",
+    "Validation selects checkpoint; held-out metrics separate",
+    "Compare base/fine-tuned format validity and metadata agreement"
+  ]
+}

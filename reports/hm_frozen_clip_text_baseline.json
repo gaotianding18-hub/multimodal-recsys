@@ -1,0 +1,13 @@
+{
+  "val": {
+    "recall@12": 0.008929053337993126,
+    "ndcg@12": 0.0061311319630653685,
+    "map@12": 0.0038984941948554835
+  },
+  "test": {
+    "recall@12": 0.006923887217087632,
+    "ndcg@12": 0.004180469976365931,
+    "map@12": 0.002416238659063916
+  },
+  "model": "Frozen CLIP text average history cosine; full catalogue; no fitted parameters"
+}

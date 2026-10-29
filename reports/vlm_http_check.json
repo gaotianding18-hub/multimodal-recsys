@@ -1,0 +1,14 @@
+{
+  "version": "17352e0be7f4",
+  "checked_test_items": 3,
+  "offline_http_generation_equal": true,
+  "invalid_requests_return_400": true,
+  "elapsed_ms": [
+    802.0977909909561,
+    523.3352920040488,
+    540.670583024621
+  ],
+  "limitations": [
+    "Three deterministic samples, not full service equivalence or load benchmark"
+  ]
+}

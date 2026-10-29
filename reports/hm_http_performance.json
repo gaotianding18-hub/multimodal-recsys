@@ -1,0 +1,19 @@
+{
+  "candidate_items": 41585,
+  "hardware": "MacBook Air M5 24GB, CPU, 1 torch thread",
+  "method": "warm HTTP loopback, 5 warmup, 100 requests per concurrency, retrieval100 then rank12",
+  "results": {
+    "1": {
+      "requests": 100,
+      "p50_ms": 1.467583468183875,
+      "p95_ms": 4.9833625060273326,
+      "throughput_rps": 441.19277136678284
+    },
+    "4": {
+      "requests": 100,
+      "p50_ms": 2.7639374893624336,
+      "p95_ms": 3.7014482019003476,
+      "throughput_rps": 1382.7465562326138
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "checked_items": 3,
+  "splits": [
+    "train",
+    "val",
+    "test"
+  ],
+  "cache_consistency": true,
+  "checkpoint_sha256": "6e9bd422ec99885bde3471b8058f7a76bff3e43cbbe5fea89da0d683dac32720",
+  "cache_sha256": "62b99658a5b4b3432a6586e824b71157b49467e9b7c1dab77de35c3b563420b5"
+}

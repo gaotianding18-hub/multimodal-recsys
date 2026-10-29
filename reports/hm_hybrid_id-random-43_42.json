@@ -1,0 +1,62 @@
+{
+  "args": {
+    "retriever": "artifacts/hm/id-random-43",
+    "seed": 42,
+    "epochs": 3
+  },
+  "logs": [
+    {
+      "epoch": 1,
+      "loss": 0.27818561489688215,
+      "val": {
+        "recall@12": 0.011188588338719496,
+        "ndcg@12": 0.006875540900747859,
+        "map@12": 0.0032732541748908732,
+        "candidate_recall": 0.16510677618215971
+      }
+    },
+    {
+      "epoch": 2,
+      "loss": 0.2329552585324082,
+      "val": {
+        "recall@12": 0.01093135260204795,
+        "ndcg@12": 0.006552805065601536,
+        "map@12": 0.0030059134853363282,
+        "candidate_recall": 0.16510677618215971
+      }
+    },
+    {
+      "epoch": 3,
+      "loss": 0.23314569164269236,
+      "val": {
+        "recall@12": 0.010689067333756656,
+        "ndcg@12": 0.006535834557649618,
+        "map@12": 0.002941638873875249,
+        "candidate_recall": 0.16510677618215971
+      }
+    }
+  ],
+  "test_hybrid": {
+    "recall@12": 0.011249290040910956,
+    "ndcg@12": 0.007150013788727582,
+    "map@12": 0.0037092713773037174,
+    "candidate_recall": 0.1494688947342318
+  },
+  "test_neural_only": {
+    "recall@12": 0.011340872432796282,
+    "ndcg@12": 0.007164557428761221,
+    "map@12": 0.0037148241008937133,
+    "candidate_recall": 0.06355369390060837
+  },
+  "selection_val_ndcg": 0.006875540900747859,
+  "seconds": 78.89138645800995,
+  "retriever_sha256": "8d60edbc7c23c772124d98f814a3f0897505bb4374e326a57a6045ba670e047c",
+  "ranker_sha256": "4e22b3dc1f10614c1bc0d47129111fdb4ffc40177b7d99fa6a143850fe433d50",
+  "negative_sampling": "50% available historical non-targets, otherwise uniform non-targets; not explicit dislikes",
+  "limitations": [
+    "Frozen recent popularity computed before validation",
+    "No blind test claim",
+    "Static metadata snapshot; no historical image/text snapshots",
+    "Ranking trained on sampled distractors, not production exposures"
+  ]
+}

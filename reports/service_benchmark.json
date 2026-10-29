@@ -1,0 +1,33 @@
+{
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "device": "cpu",
+  "catalogue_items": 36,
+  "scenario_candidates": 12,
+  "retrieved_candidates": 6,
+  "k": 3,
+  "method": "warm local HTTP POST, closed-loop thread clients, includes localhost roundtrip",
+  "runs": [
+    {
+      "concurrency": 1,
+      "requests": 200,
+      "warmup_requests": 20,
+      "errors": 0,
+      "error_messages": [],
+      "throughput_requests_s": 1074.7035405989272,
+      "p50_ms": 0.6423960148822516,
+      "p95_ms": 2.4405582866165787,
+      "p99_ms": 5.024744219845147
+    },
+    {
+      "concurrency": 4,
+      "requests": 200,
+      "warmup_requests": 20,
+      "errors": 0,
+      "error_messages": [],
+      "throughput_requests_s": 2335.0550949231656,
+      "p50_ms": 1.6389579977840185,
+      "p95_ms": 2.5601669854950155,
+      "p99_ms": 2.9554157203529026
+    }
+  ]
+}

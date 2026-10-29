@@ -1,0 +1,92 @@
+{
+  "baselines": {
+    "val": {
+      "popularity": {
+        "recall@12": 0.3377777777777778,
+        "ndcg@12": 0.18763978953251187,
+        "map@12": 0.13670935545935545
+      },
+      "repeat_then_popularity": {
+        "recall@12": 0.47222222222222227,
+        "ndcg@12": 0.35029345116222016,
+        "map@12": 0.3042879589546257
+      }
+    },
+    "test": {
+      "popularity": {
+        "recall@12": 0.2842741935483871,
+        "ndcg@12": 0.16171179207645514,
+        "map@12": 0.12107000302564819
+      },
+      "repeat_then_popularity": {
+        "recall@12": 0.3971774193548387,
+        "ndcg@12": 0.30787667435433747,
+        "map@12": 0.2726065377275054
+      }
+    }
+  },
+  "aggregation": {
+    "frozen_id": {
+      "seeds": 3,
+      "ndcg_mean": 0.2758578869573389,
+      "seed_population_std": 0.00998172470018373
+    },
+    "frozen_text": {
+      "seeds": 3,
+      "ndcg_mean": 0.2914009415465652,
+      "seed_population_std": 0.011524973479999824
+    },
+    "frozen_image": {
+      "seeds": 3,
+      "ndcg_mean": 0.2908380131054124,
+      "seed_population_std": 0.0050771579009840214
+    },
+    "frozen_mean": {
+      "seeds": 3,
+      "ndcg_mean": 0.2916539660577127,
+      "seed_population_std": 0.004247662811223938
+    },
+    "frozen_gate": {
+      "seeds": 3,
+      "ndcg_mean": 0.2921760171958343,
+      "seed_population_std": 0.007926766628887128
+    },
+    "lora_text": {
+      "seeds": 3,
+      "ndcg_mean": 0.2859505620350973,
+      "seed_population_std": 0.012131707064365999
+    },
+    "lora_image": {
+      "seeds": 3,
+      "ndcg_mean": 0.2932189960307751,
+      "seed_population_std": 0.009283597064286926
+    },
+    "lora_mean": {
+      "seeds": 3,
+      "ndcg_mean": 0.2895115034938838,
+      "seed_population_std": 0.011146485589304308
+    },
+    "lora_gate": {
+      "seeds": 3,
+      "ndcg_mean": 0.2908775053566391,
+      "seed_population_std": 0.011764544381822329
+    }
+  },
+  "multimodal_selected_on_validation": {
+    "source": "frozen",
+    "mode": "gate",
+    "seed": 43,
+    "epochs": 10
+  },
+  "selected_test": {
+    "recall@12": 0.3548387096774194,
+    "ndcg@12": 0.29188776321733095,
+    "map@12": 0.2653001792114696
+  },
+  "limitations": [
+    "Conditional subset results not comparable to full H&M metrics",
+    "LoRA transfer uses fixed adapter seed42; the three seeds here are retrieval head seeds",
+    "ID baseline uses separate history architecture",
+    "Selection by validation, test already exploratory"
+  ]
+}

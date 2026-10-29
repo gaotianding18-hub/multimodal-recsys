@@ -1,0 +1,23 @@
+{
+  "items": 590,
+  "pair_groups": 226,
+  "pair_splits": {
+    "train": 413,
+    "val": 93,
+    "test": 84
+  },
+  "behavior_queries": {
+    "train": 1794,
+    "val": 150,
+    "test": 124
+  },
+  "selection": "Existing official image subset, not representative. Pair split groups product_code, exact image SHA and exact caption. Behavior keeps original temporal split.",
+  "limitations": [
+    "Filtered evaluation only, not original full-catalogue results",
+    "CLIP pair task and purchase recommendation are distinct protocols"
+  ],
+  "hashes": {
+    "catalogue.json": "c30cc5477c05426358990ec62298368ab0de7de7f26627160409686e79891126",
+    "queries.jsonl": "359c1195e80d2c789916eb2342144ef0ef1e8f4b5f698a403de28916f7b0c26e"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "device": "cpu",
+  "threads": 4,
+  "retrieval_epochs": 100,
+  "ranking_epochs": 60,
+  "learning_rate": 0.001,
+  "weight_decay": 0.001,
+  "temperature": 0.1,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "modes": [
+    "text",
+    "image",
+    "multimodal"
+  ],
+  "embedding_dim": 32,
+  "image_resize": [
+    16,
+    16
+  ],
+  "text_hash_dim": 256,
+  "positive_rating_min": 4,
+  "negative_rating_max": 2,
+  "candidate_pool": 12,
+  "retrieved_k": 6,
+  "selection": "validation_ndcg@3",
+  "note": "Configuration manifest mirrors core.py/train.py constants; CLI parameter overrides not implemented."
+}

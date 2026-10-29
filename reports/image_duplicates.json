@@ -1,0 +1,5 @@
+{
+  "exact_decoded_pixel_duplicates": [],
+  "near_duplicate_detection": "8x8 difference hash hamming <=6 is heuristic, not proof",
+  "near_duplicate_candidates": []
+}

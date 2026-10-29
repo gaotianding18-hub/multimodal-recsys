@@ -1,0 +1,97 @@
+{
+  "args": {
+    "epochs": 3,
+    "seed": 42,
+    "device": "mps"
+  },
+  "task": "Generative VLM attribute SFT with catalogue weak labels",
+  "baseline": {
+    "val": {
+      "json_valid_rate": 0.8709677419354839,
+      "product_type_agreement": 0.16129032258064516,
+      "color_agreement": 0.3548387096774194,
+      "joint_agreement": 0.08602150537634409,
+      "product_type_macro_recall": 0.22478991596638653,
+      "color_macro_recall": 0.14503023431594858,
+      "items": 93
+    },
+    "test": {
+      "json_valid_rate": 0.9047619047619048,
+      "product_type_agreement": 0.20238095238095238,
+      "color_agreement": 0.4523809523809524,
+      "joint_agreement": 0.10714285714285714,
+      "product_type_macro_recall": 0.2226190476190476,
+      "color_macro_recall": 0.18429487179487178,
+      "items": 84
+    }
+  },
+  "logs": [
+    {
+      "epoch": 1,
+      "loss": 0.7506446287793628,
+      "val": {
+        "json_valid_rate": 0.989247311827957,
+        "product_type_agreement": 0.1827956989247312,
+        "color_agreement": 0.5161290322580645,
+        "joint_agreement": 0.08602150537634409,
+        "product_type_macro_recall": 0.19215686274509802,
+        "color_macro_recall": 0.22329302091206854,
+        "items": 93
+      }
+    },
+    {
+      "epoch": 2,
+      "loss": 0.37471101429881687,
+      "val": {
+        "json_valid_rate": 1.0,
+        "product_type_agreement": 0.44086021505376344,
+        "color_agreement": 0.4946236559139785,
+        "joint_agreement": 0.24731182795698925,
+        "product_type_macro_recall": 0.3322211237436151,
+        "color_macro_recall": 0.2440791131267322,
+        "items": 93
+      }
+    },
+    {
+      "epoch": 3,
+      "loss": 0.2568005466310546,
+      "val": {
+        "json_valid_rate": 1.0,
+        "product_type_agreement": 0.5376344086021505,
+        "color_agreement": 0.5698924731182796,
+        "joint_agreement": 0.3010752688172043,
+        "product_type_macro_recall": 0.39664689405173836,
+        "color_macro_recall": 0.34539556563366086,
+        "items": 93
+      }
+    }
+  ],
+  "test": {
+    "json_valid_rate": 1.0,
+    "product_type_agreement": 0.42857142857142855,
+    "color_agreement": 0.6428571428571429,
+    "joint_agreement": 0.2857142857142857,
+    "product_type_macro_recall": 0.3375,
+    "color_macro_recall": 0.34345238095238095,
+    "items": 84
+  },
+  "trainable_parameters": 409600,
+  "gradient_l1": 1974.690357208252,
+  "adapter_l1_change": 4776.442081451416,
+  "base_sha_before": "269aab80426fe8df2f9f10e3c223dc4c852c9c40eb651c23d73e8e918dab9d24",
+  "base_sha_after": "269aab80426fe8df2f9f10e3c223dc4c852c9c40eb651c23d73e8e918dab9d24",
+  "seconds": 638.3116526670055,
+  "checkpoint_sha256": "abe61f117eac1a4f415372827819b3e3f3d958fb6e674cb1faf39cc2bfaea3e8",
+  "data_sha256": {
+    "train": "0c33538e5e98d15897a14bc5c4bd1dcdc17bb1cc55d5a8710852c6db328392e8",
+    "val": "09e76371b3bd7cff45d843ebc42cd1eb38df370d6963dd1b81769f94c2bf2b7f",
+    "test": "53fffd9939a129f2c7f65d3d20df0505f44986dbdab078913f8b74ed9ac52968"
+  },
+  "limitations": [
+    "Single seed",
+    "Nonrandom 590 items",
+    "Metadata agreement is not human visual accuracy",
+    "No representative recommendation gains",
+    "End-to-end generation evaluation; taxonomy synonyms counted as misses"
+  ]
+}

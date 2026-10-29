@@ -1,0 +1,341 @@
+[
+  {
+    "path": "data/metadata/item_1.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_10.png",
+    "status": "downloaded",
+    "bytes": 665895
+  },
+  {
+    "path": "data/metadata/item_11.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_12.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_13.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_14.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_15.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_16.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_17.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_18.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_19.png",
+    "status": "downloaded",
+    "bytes": 806693
+  },
+  {
+    "path": "data/metadata/item_2.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_20.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_21.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_22.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_23.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_24.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_25.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_26.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_27.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_28.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_29.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_3.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_30.png",
+    "status": "downloaded",
+    "bytes": 896921
+  },
+  {
+    "path": "data/metadata/item_31.png",
+    "status": "downloaded",
+    "bytes": 1074490
+  },
+  {
+    "path": "data/metadata/item_32.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_33.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_34.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_35.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_36.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_37.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_38.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_39.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_4.png",
+    "status": "downloaded",
+    "bytes": 812399
+  },
+  {
+    "path": "data/metadata/item_40.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_41.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_42.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_43.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_44.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_45.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_46.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_47.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_48.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_49.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_5.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_50.png",
+    "status": "verified_cached"
+  },
+  {
+    "path": "data/metadata/item_51.png",
+    "status": "downloaded",
+    "bytes": 345479
+  },
+  {
+    "path": "data/metadata/item_52.png",
+    "status": "downloaded",
+    "bytes": 155476
+  },
+  {
+    "path": "data/metadata/item_53.png",
+    "status": "downloaded",
+    "bytes": 411700
+  },
+  {
+    "path": "data/metadata/item_54.png",
+    "status": "downloaded",
+    "bytes": 311649
+  },
+  {
+    "path": "data/metadata/item_55.png",
+    "status": "downloaded",
+    "bytes": 156923
+  },
+  {
+    "path": "data/metadata/item_56.png",
+    "status": "downloaded",
+    "bytes": 248921
+  },
+  {
+    "path": "data/metadata/item_57.png",
+    "status": "downloaded",
+    "bytes": 367692
+  },
+  {
+    "path": "data/metadata/item_58.png",
+    "status": "downloaded",
+    "bytes": 351583
+  },
+  {
+    "path": "data/metadata/item_59.png",
+    "status": "downloaded",
+    "bytes": 91385
+  },
+  {
+    "path": "data/metadata/item_6.png",
+    "status": "downloaded",
+    "bytes": 1408494
+  },
+  {
+    "path": "data/metadata/item_60.png",
+    "status": "downloaded",
+    "bytes": 80007
+  },
+  {
+    "path": "data/metadata/item_61.png",
+    "status": "downloaded",
+    "bytes": 201019
+  },
+  {
+    "path": "data/metadata/item_62.png",
+    "status": "downloaded",
+    "bytes": 114158
+  },
+  {
+    "path": "data/metadata/item_63.png",
+    "status": "downloaded",
+    "bytes": 129705
+  },
+  {
+    "path": "data/metadata/item_64.png",
+    "status": "downloaded",
+    "bytes": 135415
+  },
+  {
+    "path": "data/metadata/item_65.png",
+    "status": "downloaded",
+    "bytes": 91486
+  },
+  {
+    "path": "data/metadata/item_66.png",
+    "status": "downloaded",
+    "bytes": 241058
+  },
+  {
+    "path": "data/metadata/item_67.png",
+    "status": "downloaded",
+    "bytes": 153061
+  },
+  {
+    "path": "data/metadata/item_68.png",
+    "status": "downloaded",
+    "bytes": 324699
+  },
+  {
+    "path": "data/metadata/item_69.png",
+    "status": "downloaded",
+    "bytes": 244025
+  },
+  {
+    "path": "data/metadata/item_7.png",
+    "status": "downloaded",
+    "bytes": 1491734
+  },
+  {
+    "path": "data/metadata/item_70.png",
+    "status": "downloaded",
+    "bytes": 186162
+  },
+  {
+    "path": "data/metadata/item_71.png",
+    "status": "downloaded",
+    "bytes": 258724
+  },
+  {
+    "path": "data/metadata/item_72.png",
+    "status": "downloaded",
+    "bytes": 82508
+  },
+  {
+    "path": "data/metadata/item_73.png",
+    "status": "downloaded",
+    "bytes": 131383
+  },
+  {
+    "path": "data/metadata/item_74.png",
+    "status": "downloaded",
+    "bytes": 207178
+  },
+  {
+    "path": "data/metadata/item_75.png",
+    "status": "downloaded",
+    "bytes": 85011
+  },
+  {
+    "path": "data/metadata/item_76.png",
+    "status": "downloaded",
+    "bytes": 176323
+  },
+  {
+    "path": "data/metadata/item_8.png",
+    "status": "downloaded",
+    "bytes": 435481
+  },
+  {
+    "path": "data/metadata/item_9.png",
+    "status": "downloaded",
+    "bytes": 1981543
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "source": "VOGUE official seeker_ratings.csv",
+  "rows": 60,
+  "unique_seeker_ids": 10,
+  "rating_histogram": {
+    "3.0": 129,
+    "5.0": 62,
+    "2.0": 129,
+    "-1.0": 1440,
+    "4.0": 81,
+    "1.0": 319
+  },
+  "note": "Rows are conversation-specific preference surveys, not chronological purchases. Download of metadata sample/profile ratings/license timed out; image/text join not yet validated."
+}

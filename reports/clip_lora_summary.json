@@ -1,0 +1,38 @@
+{
+  "runs": [
+    42,
+    43,
+    44
+  ],
+  "baseline": {
+    "image_to_text_recall@1": 0.6071428571428571,
+    "image_to_text_recall@5": 0.8928571428571429,
+    "image_to_text_recall@10": 0.9761904761904762,
+    "text_to_image_recall@1": 0.6071428571428571,
+    "text_to_image_recall@5": 0.9047619047619048,
+    "text_to_image_recall@10": 0.9523809523809523
+  },
+  "test_mean": {
+    "image_to_text_recall@1": 0.6904761904761904,
+    "image_to_text_recall@5": 0.9166666666666666,
+    "image_to_text_recall@10": 0.9761904761904762,
+    "text_to_image_recall@1": 0.6150793650793651,
+    "text_to_image_recall@5": 0.8968253968253969,
+    "text_to_image_recall@10": 0.9563492063492064
+  },
+  "test_seed_std": {
+    "image_to_text_recall@1": 1.1102230246251565e-16,
+    "image_to_text_recall@5": 0.00972019739199675,
+    "image_to_text_recall@10": 0.0,
+    "text_to_image_recall@1": 0.014847846772912463,
+    "text_to_image_recall@5": 0.011223917161691244,
+    "text_to_image_recall@10": 0.005611958580845648
+  },
+  "base_unchanged_all": true,
+  "all_towers_received_gradient": true,
+  "limitations": [
+    "Small grouped 84-item held-out catalogue",
+    "Three seeds do not establish statistical significance",
+    "Image-text matching is distinct from purchase recommendation"
+  ]
+}

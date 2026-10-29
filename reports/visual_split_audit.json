@@ -1,0 +1,13 @@
+{
+  "items": 590,
+  "checks": [
+    "product_code",
+    "exact_image_sha256",
+    "exact_caption"
+  ],
+  "cross_split_groups": 0,
+  "limitations": [
+    "Near duplicates not ruled out",
+    "This audits pair matching split, not purchase temporal protocol"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "status": "hm_csv_audit_complete_images_pending",
+  "cloud_budget_authorized": false,
+  "deployment_host": "127.0.0.1",
+  "seed": 42,
+  "proposed_max_items": 30000,
+  "proposed_max_interactions": 1000000,
+  "history_length": 20,
+  "embedding_dim": 128,
+  "batch_size": 64,
+  "epochs_for_smoke": 1,
+  "large_model_finetuning": "deferred_until_measured",
+  "dataset": "H&M Personalized Fashion Recommendations",
+  "user_direction": "retain_real_product_image_text_interactions",
+  "preferred_dataset_candidate": "official H&M competition",
+  "kaggle_account_available": true,
+  "rules_accepted_by_user": true
+}

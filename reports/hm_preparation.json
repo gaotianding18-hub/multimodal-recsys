@@ -1,0 +1,40 @@
+{
+  "config": {
+    "train_start": "2020-06-17",
+    "validation_start": "2020-09-09",
+    "test_start": "2020-09-16",
+    "end_exclusive": "2020-09-23",
+    "max_users": 100000,
+    "min_train_purchases": 5,
+    "history_length": 30,
+    "selection_seed": 42,
+    "evaluation_k": 12
+  },
+  "source_cache_key": "{\"end\": \"2020-09-23\", \"source_mtime_ns\": 1791708430354282202, \"source_size\": 3488002253, \"start\": \"2020-06-17\"}",
+  "source_hashes": {
+    "articles.csv": "25f21882053517f7684ea43f524225a9481a7bb9aab9cf0abfc7fe8c4576a72b",
+    "customers.csv": "abf3450c37ee1c16124e0d3379371153f5371148742efdcfe44c97c0445df6b2",
+    "transactions_train.csv": "fff5e3b35c1b26016aa0bf2231be9525bc766eed32c94f1653420b465aef84fa"
+  },
+  "processed_hashes": {
+    "queries.jsonl": "75c0803a69812a5ca3883e4ef2a1c528c4312b484845e5fce662f7d9be19c671",
+    "catalogue.json": "f9c2c673696301c33c7a12faeda292906241aa84d4d3af712b62f1eab40400b6",
+    "popularity.json": "e5fb31613bb01c0296c691a3fa680753976fd8e4c4c12922121e67f6991d4d51"
+  },
+  "eligible_train_users": 271617,
+  "selected_users": 100000,
+  "candidate_items": 41585,
+  "stats": {
+    "train_queries": 212658,
+    "selected_transactions": 1342361,
+    "test_queries": 12544,
+    "val_queries": 13535
+  },
+  "target_coverage": {
+    "test_all": 41779,
+    "test_in_catalogue": 35783,
+    "val_all": 45880,
+    "val_in_catalogue": 43014
+  },
+  "protocol": "train-active hashed user subset; all recent train-observed catalogue; repeat purchases allowed; out-of-catalogue targets retained in metric denominator"
+}

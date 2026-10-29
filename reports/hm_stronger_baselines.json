@@ -1,0 +1,30 @@
+{
+  "val": {
+    "recent_popularity": {
+      "recall@12": 0.01890818585054163,
+      "ndcg@12": 0.011837054179354189,
+      "map@12": 0.006116068440332384
+    },
+    "repeat_recent_then_popularity": {
+      "recall@12": 0.05988265477802924,
+      "ndcg@12": 0.04498486837737789,
+      "map@12": 0.031700036951839906
+    }
+  },
+  "test": {
+    "recent_popularity": {
+      "recall@12": 0.017232761161351615,
+      "ndcg@12": 0.010471642088735873,
+      "map@12": 0.005244379214606405
+    },
+    "repeat_recent_then_popularity": {
+      "recall@12": 0.05121906913176285,
+      "ndcg@12": 0.0384727369280932,
+      "map@12": 0.026963507274111495
+    }
+  },
+  "limitations": [
+    "Popularity frozen before validation for both weeks.",
+    "Same-day history ties use deterministic item-ID order, not true temporal order."
+  ]
+}

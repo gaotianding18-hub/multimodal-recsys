@@ -1,0 +1,11 @@
+{
+  "train_start": "2020-06-17",
+  "validation_start": "2020-09-09",
+  "test_start": "2020-09-16",
+  "end_exclusive": "2020-09-23",
+  "max_users": 100000,
+  "min_train_purchases": 5,
+  "history_length": 30,
+  "selection_seed": 42,
+  "evaluation_k": 12
+}

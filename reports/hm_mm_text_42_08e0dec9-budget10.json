@@ -1,0 +1,137 @@
+{
+  "args": {
+    "features": "artifacts/hm/clip/features.npz",
+    "mode": "text",
+    "seed": 42,
+    "epochs": 10,
+    "batch_size": 256,
+    "device": "cpu",
+    "max_train_queries": 0,
+    "run_tag": "budget10",
+    "allow_partial_images": false
+  },
+  "train_queries": 212658,
+  "candidate_items": 41585,
+  "image_coverage": 0.014187808148562908,
+  "logs": [
+    {
+      "epoch": 1,
+      "loss": 6.797081834859653,
+      "val": {
+        "recall@12": 0.005776978496216864,
+        "ndcg@12": 0.003428427222182219,
+        "map@12": 0.0018299921889045484
+      }
+    },
+    {
+      "epoch": 2,
+      "loss": 6.666324758357519,
+      "val": {
+        "recall@12": 0.011273322453571731,
+        "ndcg@12": 0.006969988913379771,
+        "map@12": 0.0039032958864216516
+      }
+    },
+    {
+      "epoch": 3,
+      "loss": 6.588751011950588,
+      "val": {
+        "recall@12": 0.015619096831176824,
+        "ndcg@12": 0.009754006959036457,
+        "map@12": 0.005599954688263502
+      }
+    },
+    {
+      "epoch": 4,
+      "loss": 6.505488362983676,
+      "val": {
+        "recall@12": 0.017003686480459874,
+        "ndcg@12": 0.011191856774253904,
+        "map@12": 0.006776436884526259
+      }
+    },
+    {
+      "epoch": 5,
+      "loss": 6.42168790023106,
+      "val": {
+        "recall@12": 0.018933125216994744,
+        "ndcg@12": 0.012185822695274807,
+        "map@12": 0.0072776929953825755
+      }
+    },
+    {
+      "epoch": 6,
+      "loss": 6.342981565156425,
+      "val": {
+        "recall@12": 0.020352637686201207,
+        "ndcg@12": 0.013024876083711617,
+        "map@12": 0.007726154765202559
+      }
+    },
+    {
+      "epoch": 7,
+      "loss": 6.273454760242742,
+      "val": {
+        "recall@12": 0.02158015539691067,
+        "ndcg@12": 0.01399344937091999,
+        "map@12": 0.00844385843805938
+      }
+    },
+    {
+      "epoch": 8,
+      "loss": 6.209527384072865,
+      "val": {
+        "recall@12": 0.022923473553121302,
+        "ndcg@12": 0.014624622045932224,
+        "map@12": 0.008779678971164455
+      }
+    },
+    {
+      "epoch": 9,
+      "loss": 6.150927691109631,
+      "val": {
+        "recall@12": 0.022320369293755492,
+        "ndcg@12": 0.01453181893018349,
+        "map@12": 0.008798080359769473
+      }
+    },
+    {
+      "epoch": 10,
+      "loss": 6.096520522584697,
+      "val": {
+        "recall@12": 0.023980435543447767,
+        "ndcg@12": 0.015713580417987334,
+        "map@12": 0.009694497604783095
+      }
+    }
+  ],
+  "selection_val_ndcg": 0.015713580417987334,
+  "test": {
+    "recall@12": 0.01807496778088358,
+    "ndcg@12": 0.011313953357492228,
+    "map@12": 0.006616683734419783
+  },
+  "seconds": null,
+  "recovery_eval_seconds": 0.9751376659842208,
+  "frozen_clip": true,
+  "feature_sha256": "08e0dec93276d7ee9451a073cb6d4fceea7b69477f51de27c2e12f79b2fd5844",
+  "model_sha256": "7f769503ace68b5434864944157aef67dd8e7d8a9199f72fb1a82e314f14030c",
+  "trainer_sha256": "9f8e96d6a9e38c114ab2358b8a4020f5c47ad927a9948d04c63be055a81c6609",
+  "report_recovered": true,
+  "protocol": {
+    "train_start": "2020-06-17",
+    "validation_start": "2020-09-09",
+    "test_start": "2020-09-16",
+    "end_exclusive": "2020-09-23",
+    "max_users": 100000,
+    "min_train_purchases": 5,
+    "history_length": 30,
+    "selection_seed": 42,
+    "evaluation_k": 12
+  },
+  "limitations": [
+    "Original total duration not retained, not reconstructed",
+    "Exploratory test, not blind",
+    "Ten-epoch budget versus three-epoch run is not equal-compute algorithm ablation"
+  ]
+}

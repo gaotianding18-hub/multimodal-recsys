@@ -1,0 +1,9 @@
+{
+  "version": "b6220dc58817",
+  "matched_histories_per_method": {
+    "repeat": 30,
+    "id": 30
+  },
+  "fallback_checked": true,
+  "scope": "Base ID+rank and repeat. Not yet a full multimodal release."
+}
